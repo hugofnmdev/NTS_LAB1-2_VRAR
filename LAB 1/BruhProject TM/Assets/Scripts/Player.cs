@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
 
         if (horizontal != 0)
         {
-            rb.AddForce(Vector3.right * horizontal * 10, ForceMode.Acceleration);
+            rb.AddForce(Vector3.right * horizontal * 3, ForceMode.Acceleration);
         }
     }
 
@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
     {
         if (inputJump && isGrounded)
         {
-            rb.AddForce(Vector3.up * 5, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * 4, ForceMode.Impulse);
             inputJump = false;
             isGrounded = false;
         }
